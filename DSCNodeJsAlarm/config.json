@@ -1,0 +1,48 @@
+{
+  "httpport": 3000,
+  "dscalarm": {
+    "alarmpassword": "1234",
+    "wincom": "COM3",
+    "linuxcom": "/dev/ttyUSB0",
+    "baudRate": 9600,
+    "panelConfig": {
+      "type": "discover",
+      "zones": [
+        {
+          "zone": "001",
+          "type": "contact",
+          "name": "Front door contact sensor"
+        },
+        {
+          "zone": "002",
+          "type": "contact",
+          "name": "Patio door contact sensor"
+        },
+        {
+          "zone": "003",
+          "type": "contact",
+          "name": "Kitchen door contact sensor"
+        },
+        {
+          "zone": "004",
+          "type": "contact",
+          "name": "Master room contact sensor"
+        },
+        {
+          "zone": "005",
+          "type": "contact",
+          "name": "Living room windows contact sensor"
+        },
+        {
+          "zone": "006",
+          "type": "contact",
+          "name": "Studio windows contact sensor"
+        }
+      ]
+    }
+  },
+  "notify": {
+    "address": "192.168.0.200",
+    "port": "39501"
+  }
+}
